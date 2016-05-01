@@ -173,6 +173,9 @@
                                     <constraint firstAttribute="height" constant="60" id="rO2-xl-PG0"/>
                                 </constraints>
                                 <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <segue destination="acO-7H-ZFE" kind="modal" id="yhG-6j-pJK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,6 +190,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="272-GR-rYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="314"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AYt-ei-ci6">
+            <objects>
+                <viewController id="acO-7H-ZFE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="arb-R1-AWt"/>
+                        <viewControllerLayoutGuide type="bottom" id="96r-eM-A4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q02-EM-yD0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIj-hO-sE9">
+                                <rect key="frame" x="36" y="254" width="248" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="AER-LV-0Nv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbC-0b-DJy">
+                                <rect key="frame" x="-4" y="518" width="328" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zMV-qt-igu"/>
+                                </constraints>
+                                <state key="normal" title="Okay"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lIj-hO-sE9" firstAttribute="leading" secondItem="Q02-EM-yD0" secondAttribute="leadingMargin" constant="20" id="5Gn-jb-U2R"/>
+                            <constraint firstItem="lIj-hO-sE9" firstAttribute="centerY" secondItem="Q02-EM-yD0" secondAttribute="centerY" id="6zf-s1-yhb"/>
+                            <constraint firstItem="nbC-0b-DJy" firstAttribute="leading" secondItem="Q02-EM-yD0" secondAttribute="leadingMargin" constant="-20" id="CDj-Nc-SHO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lIj-hO-sE9" secondAttribute="trailing" constant="20" id="cqj-7x-obS"/>
+                            <constraint firstItem="96r-eM-A4g" firstAttribute="top" secondItem="nbC-0b-DJy" secondAttribute="bottom" id="oFK-Dj-0eR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nbC-0b-DJy" secondAttribute="trailing" constant="-20" id="u6j-8T-9Yl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nb3-ya-PXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010" y="314"/>
         </scene>
         <!--Login-->
         <scene sceneID="Pfs-jz-rsK">
