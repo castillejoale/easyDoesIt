@@ -31,6 +31,25 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if "attendanceSegue" == segue.identifier {
+            let attendanceServices : NSMutableArray = []
+            for i in 0...self.tableView.visibleCells.count - 1 {
+                let indexPath = NSIndexPath(forRow: i, inSection: 0)
+                let cell:CustomTableViewCell = self.tableView.cellForRowAtIndexPath(indexPath)! as! CustomTableViewCell
+                if (cell.ticked!) {
+                    attendanceServices.addObject((cell.titleLabel?.text)!)
+                    
+                }
+            }
+            
+            let dvc = segue.destinationViewController as! LocationVC
+            dvc.services = attendanceServices
+            dvc.service = "Attendance"
+        }
+    }
+    
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell:CustomTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("CustomCell")! as! CustomTableViewCell

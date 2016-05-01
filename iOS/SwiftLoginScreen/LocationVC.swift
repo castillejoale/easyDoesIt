@@ -1,5 +1,5 @@
 //
-//  ConfirmationVC.swift
+//  LocationVC.swift
 //  SwiftLoginScreen
 //
 //  Created by Alejandro Castillejo on 5/1/16.
@@ -9,18 +9,17 @@
 import UIKit
 import Foundation
 
-class ConfirmationVC: UIViewController {
-
+class LocationVC: UIViewController {
+    
     var services : NSMutableArray = []
-    var currentLocation : String?
     var service : String?
     
     override func viewDidLoad() {
         
-        print("Confirmation")
+        print("Location")
         print(service)
         print(services)
-        print(currentLocation)
+        
         
     }
     
@@ -28,5 +27,15 @@ class ConfirmationVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if "confirmationSegue" == segue.identifier {
+            
+            let dvc = segue.destinationViewController as! ConfirmationVC
+            dvc.services = self.services
+            dvc.currentLocation = "ha"
+            dvc.service = self.service
+        }
+    }
+    
 }

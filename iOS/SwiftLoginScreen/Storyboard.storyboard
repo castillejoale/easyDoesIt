@@ -48,7 +48,7 @@
                                 </constraints>
                                 <state key="normal" title="Attendance"/>
                                 <connections>
-                                    <segue destination="Vkm-M0-ilg" kind="push" id="nSk-5N-bMU"/>
+                                    <segue destination="Vkm-M0-ilg" kind="push" identifier="" id="nSk-5N-bMU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgI-0f-zKc">
@@ -100,7 +100,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dN9-5s-3eO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="rgx-Xb-9aB"/>
             </objects>
-            <point key="canvasLocation" x="439" y="314"/>
+            <point key="canvasLocation" x="439" y="616"/>
         </scene>
         <!--Attendance-->
         <scene sceneID="Do3-fc-5Cb">
@@ -122,7 +122,7 @@
                                 </constraints>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="OhH-qV-GB7" kind="push" id="iJs-0K-ohD"/>
+                                    <segue destination="kji-R2-Z8M" kind="push" identifier="attendanceSegue" id="jZ6-C0-f06"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hY0-PP-iMN">
@@ -164,12 +164,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyP-sd-kaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1010" y="314"/>
+            <point key="canvasLocation" x="1010" y="-152"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="dyH-SM-TWE">
+            <objects>
+                <viewController id="kji-R2-Z8M" customClass="LocationVC" customModule="SwiftLoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gas-UF-AAc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dcu-IZ-cec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oaH-Ve-EJP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhX-RU-ehJ">
+                                <rect key="frame" x="-4" y="510" width="328" height="58"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="0bE-gM-BnW"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="OhH-qV-GB7" kind="push" identifier="confirmationSegue" id="M0Z-FA-lN8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dcu-IZ-cec" firstAttribute="top" secondItem="PhX-RU-ehJ" secondAttribute="bottom" id="2Wo-sJ-vvE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PhX-RU-ehJ" secondAttribute="trailing" constant="-20" id="dhc-7V-vR5"/>
+                            <constraint firstItem="PhX-RU-ehJ" firstAttribute="leading" secondItem="oaH-Ve-EJP" secondAttribute="leadingMargin" constant="-20" id="iwR-Iy-Bh1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Location" id="nEJ-PM-iVa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgX-4O-1fR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501" y="616"/>
         </scene>
         <!--Confirmation-->
         <scene sceneID="PoR-q6-gvk">
             <objects>
-                <viewController id="OhH-qV-GB7" sceneMemberID="viewController">
+                <viewController id="OhH-qV-GB7" customClass="ConfirmationVC" customModule="SwiftLoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V5a-mM-1Xc"/>
                         <viewControllerLayoutGuide type="bottom" id="dxw-ba-2Rc"/>
@@ -201,12 +238,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="272-GR-rYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1558" y="314"/>
+            <point key="canvasLocation" x="1971" y="616"/>
         </scene>
-        <!--View Controller-->
+        <!--SuccessVC-->
         <scene sceneID="AYt-ei-ci6">
             <objects>
-                <viewController id="acO-7H-ZFE" sceneMemberID="viewController">
+                <viewController id="acO-7H-ZFE" customClass="SuccessVC" customModule="SwiftLoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="arb-R1-AWt"/>
                         <viewControllerLayoutGuide type="bottom" id="96r-eM-A4g"/>
@@ -231,6 +268,9 @@
                                     <constraint firstAttribute="height" constant="50" id="zMV-qt-igu"/>
                                 </constraints>
                                 <state key="normal" title="THANK YOU!"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="acO-7H-ZFE" eventType="touchUpInside" id="Dai-2J-E7H"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An attendant will be arriving to help you soon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enO-bG-LI8">
                                 <rect key="frame" x="36" y="358" width="248" height="60"/>
@@ -267,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nb3-ya-PXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2010" y="314"/>
+            <point key="canvasLocation" x="2446" y="616"/>
         </scene>
         <!--Login-->
         <scene sceneID="Pfs-jz-rsK">
@@ -428,7 +468,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNb-T3-pgt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="314"/>
+            <point key="canvasLocation" x="-29" y="616"/>
         </scene>
     </scenes>
 </document>
