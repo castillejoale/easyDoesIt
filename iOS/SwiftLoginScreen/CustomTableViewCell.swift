@@ -11,12 +11,15 @@ import Foundation
 
 class CustomTableViewCell : UITableViewCell {
     
-    @IBOutlet var titleLabel: UILabel?
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-    }
+    @IBOutlet var tickerImage: UIImageView!
+    @IBOutlet var titleLabel: UILabel?
+    
+    var ticked: Bool?
+
+//    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+//        super.init(style: style, reuseIdentifier: reuseIdentifier)
+//    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +27,7 @@ class CustomTableViewCell : UITableViewCell {
     
     required init(coder decoder: NSCoder) {
         super.init(coder: decoder)!
+        self.ticked = false
     }
     
 //    override func setSelected(selected: Bool, animated: Bool) {

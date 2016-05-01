@@ -42,12 +42,19 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         
         if ( username.isEqualToString("") || password.isEqualToString("") ) {
             
-            let alertView:UIAlertView = UIAlertView()
-            alertView.title = "Sign in Failed!"
-            alertView.message = "Please enter Username and Password"
-            alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
-            alertView.show()
+            let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+            prefs.setObject(username, forKey: "USERNAME")
+            prefs.setInteger(1, forKey: "ISLOGGEDIN")
+            prefs.synchronize()
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+//            let alertView:UIAlertView = UIAlertView()
+//            alertView.title = "Sign in Failed!"
+//            alertView.message = "Please enter Username and Password"
+//            alertView.delegate = self
+//            alertView.addButtonWithTitle("OK")
+//            alertView.show()
         } else if ( username.isEqualToString("easydoesit") && password.isEqualToString("verywell") ) {
             
             let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()

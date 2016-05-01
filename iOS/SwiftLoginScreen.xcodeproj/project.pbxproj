@@ -14,10 +14,11 @@
 		EAA118A7198A23CB00F443F1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA118A6198A23CB00F443F1 /* LoginVC.swift */; };
 		EAA118A9198AAC7100F443F1 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA118A8198AAC7100F443F1 /* SignupVC.swift */; };
 		FB4E49631CD57CE7001CE20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4E49621CD57CE7001CE20B /* LaunchScreen.storyboard */; };
-		FB4E49651CD58E6E001CE20B /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E49641CD58E6E001CE20B /* TimeVC.swift */; };
 		FB4E49671CD58FC1001CE20B /* AttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E49661CD58FC1001CE20B /* AttendanceVC.swift */; };
 		FB4E49691CD5ABAA001CE20B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB4E49681CD5ABAA001CE20B /* CustomTableViewCell.xib */; };
 		FB4E496B1CD5AC44001CE20B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E496A1CD5AC44001CE20B /* CustomTableViewCell.swift */; };
+		FB4E496D1CD5FB15001CE20B /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E496C1CD5FB15001CE20B /* ConfirmationVC.swift */; };
+		FB4E496F1CD5FB25001CE20B /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E496E1CD5FB25001CE20B /* SuccessVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +33,11 @@
 		EAA118A6198A23CB00F443F1 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EAA118A8198AAC7100F443F1 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		FB4E49621CD57CE7001CE20B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FB4E49641CD58E6E001CE20B /* TimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeVC.swift; sourceTree = "<group>"; };
 		FB4E49661CD58FC1001CE20B /* AttendanceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceVC.swift; sourceTree = "<group>"; };
 		FB4E49681CD5ABAA001CE20B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		FB4E496A1CD5AC44001CE20B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FB4E496C1CD5FB15001CE20B /* ConfirmationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
+		FB4E496E1CD5FB25001CE20B /* SuccessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +75,8 @@
 				EA62FD551989F6AC00469896 /* AppDelegate.swift */,
 				EA62FD571989F6AC00469896 /* Images.xcassets */,
 				EA62FD531989F6AC00469896 /* Supporting Files */,
-				EA62FD6E1989F6E300469896 /* Storyboard.storyboard */,
-				FB4E49681CD5ABAA001CE20B /* CustomTableViewCell.xib */,
-				FB4E496A1CD5AC44001CE20B /* CustomTableViewCell.swift */,
-				EAA118A4198A1BF000F443F1 /* HomeVC.swift */,
-				FB4E49641CD58E6E001CE20B /* TimeVC.swift */,
-				FB4E49661CD58FC1001CE20B /* AttendanceVC.swift */,
-				EAA118A6198A23CB00F443F1 /* LoginVC.swift */,
-				EAA118A8198AAC7100F443F1 /* SignupVC.swift */,
+				FB4E49701CD5FB3E001CE20B /* Controller */,
+				FB4E49711CD5FB47001CE20B /* View */,
 			);
 			path = SwiftLoginScreen;
 			sourceTree = "<group>";
@@ -108,6 +104,29 @@
 				EA62FD621989F6AC00469896 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB4E49701CD5FB3E001CE20B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAA118A4198A1BF000F443F1 /* HomeVC.swift */,
+				FB4E49661CD58FC1001CE20B /* AttendanceVC.swift */,
+				FB4E496C1CD5FB15001CE20B /* ConfirmationVC.swift */,
+				FB4E496E1CD5FB25001CE20B /* SuccessVC.swift */,
+				EAA118A6198A23CB00F443F1 /* LoginVC.swift */,
+				EAA118A8198AAC7100F443F1 /* SignupVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FB4E49711CD5FB47001CE20B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA62FD6E1989F6E300469896 /* Storyboard.storyboard */,
+				FB4E49681CD5ABAA001CE20B /* CustomTableViewCell.xib */,
+				FB4E496A1CD5AC44001CE20B /* CustomTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA118A9198AAC7100F443F1 /* SignupVC.swift in Sources */,
+				FB4E496D1CD5FB15001CE20B /* ConfirmationVC.swift in Sources */,
 				FB4E49671CD58FC1001CE20B /* AttendanceVC.swift in Sources */,
 				FB4E496B1CD5AC44001CE20B /* CustomTableViewCell.swift in Sources */,
-				FB4E49651CD58E6E001CE20B /* TimeVC.swift in Sources */,
+				FB4E496F1CD5FB25001CE20B /* SuccessVC.swift in Sources */,
 				EA62FD561989F6AC00469896 /* AppDelegate.swift in Sources */,
 				EAA118A5198A1BF000F443F1 /* HomeVC.swift in Sources */,
 				EAA118A7198A23CB00F443F1 /* LoginVC.swift in Sources */,
