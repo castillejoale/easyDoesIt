@@ -11,6 +11,7 @@ import Foundation
 
 class LocationVC: UIViewController {
     
+    @IBOutlet var locationTextView: UITextView!
     var services : NSMutableArray = []
     var service : String?
     
@@ -19,7 +20,6 @@ class LocationVC: UIViewController {
         print("Location")
         print(service)
         print(services)
-        
         
     }
     
@@ -33,7 +33,10 @@ class LocationVC: UIViewController {
             
             let dvc = segue.destinationViewController as! ConfirmationVC
             dvc.services = self.services
-            dvc.currentLocation = "ha"
+            if((self.locationTextView.text) != nil){
+                dvc.currentLocation = self.locationTextView.text
+            }
+            
             dvc.service = self.service
         }
     }
