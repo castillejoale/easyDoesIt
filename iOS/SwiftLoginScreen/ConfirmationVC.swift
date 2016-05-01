@@ -11,11 +11,16 @@ import Foundation
 
 class ConfirmationVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    @IBOutlet var destinationLocationTitleLabel: UILabel!
+    @IBOutlet var destinationLocationLabel: UILabel!
+    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var inputLocationLabel: UILabel!
     var services : NSMutableArray = []
     var currentLocation : String?
     var service : String?
+    var destinationLocation : String?
     
     override func viewDidLoad() {
         
@@ -23,11 +28,19 @@ class ConfirmationVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(service)
         print(services)
         print(currentLocation)
+        print(destinationLocation)
         
         self.inputLocationLabel.text = currentLocation
         
         //Remove empty cells
         self.tableView.tableFooterView = UIView()
+        
+        if(!(service == "Transportation")){
+            self.destinationLocationLabel.hidden = true
+            self.destinationLocationTitleLabel.hidden = true
+        } else {
+            self.destinationLocationLabel.text = self.destinationLocation
+        }
         
     }
     

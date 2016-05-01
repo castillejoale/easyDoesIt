@@ -28,6 +28,14 @@ class HomeVC: UIViewController {
             self.usernameLabel.text = prefs.valueForKey("USERNAME") as? String
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if "repairSegue" == segue.identifier {
+            let dvc = segue.destinationViewController as! LocationVC
+            dvc.services = ["WheelChair repair"]
+            dvc.service = "Repair"
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

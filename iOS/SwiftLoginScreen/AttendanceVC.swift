@@ -58,10 +58,10 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         
         if (cell.ticked!){
-            print("Selected")
+//            print("Selected")
             cell.tickerImage.backgroundColor = UIColor.greenColor()
         } else {
-            print("Deselected")
+//            print("Deselected")
             cell.tickerImage.backgroundColor = UIColor.redColor()
         }
         
@@ -73,11 +73,11 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         let selectedCell:CustomTableViewCell = tableView.cellForRowAtIndexPath(indexPath)! as! CustomTableViewCell
         
         if (selectedCell.ticked!){
-            print("Deselecting")
+//            print("Deselecting")
             selectedCell.ticked = false
             selectedCell.tickerImage.backgroundColor = UIColor.redColor()
         } else {
-            print("Selecting")
+//            print("Selecting")
             selectedCell.ticked = true
             selectedCell.tickerImage.backgroundColor = UIColor.greenColor()
         }

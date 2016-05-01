@@ -14,12 +14,14 @@ class LocationVC: UIViewController {
     @IBOutlet var locationTextView: UITextView!
     var services : NSMutableArray = []
     var service : String?
+    var destinationLocation : String?
     
     override func viewDidLoad() {
         
         print("Location")
         print(service)
         print(services)
+        print (destinationLocation)
         
     }
     
@@ -36,6 +38,11 @@ class LocationVC: UIViewController {
             if((self.locationTextView.text) != nil){
                 dvc.currentLocation = self.locationTextView.text
             }
+            
+            if((destinationLocation) != nil){
+                dvc.destinationLocation = destinationLocation
+            }
+            
             
             dvc.service = self.service
         }

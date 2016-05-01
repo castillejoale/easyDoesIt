@@ -20,6 +20,7 @@
 		FB4E496D1CD5FB15001CE20B /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E496C1CD5FB15001CE20B /* ConfirmationVC.swift */; };
 		FB4E496F1CD5FB25001CE20B /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E496E1CD5FB25001CE20B /* SuccessVC.swift */; };
 		FB4E49731CD61621001CE20B /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E49721CD61621001CE20B /* LocationVC.swift */; };
+		FB4E49751CD62660001CE20B /* DestinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E49741CD62660001CE20B /* DestinationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FB4E496C1CD5FB15001CE20B /* ConfirmationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
 		FB4E496E1CD5FB25001CE20B /* SuccessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
 		FB4E49721CD61621001CE20B /* LocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		FB4E49741CD62660001CE20B /* DestinationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				FB4E49661CD58FC1001CE20B /* AttendanceVC.swift */,
 				FB4E496C1CD5FB15001CE20B /* ConfirmationVC.swift */,
+				FB4E49741CD62660001CE20B /* DestinationVC.swift */,
 				EAA118A4198A1BF000F443F1 /* HomeVC.swift */,
 				FB4E49721CD61621001CE20B /* LocationVC.swift */,
 				EAA118A6198A23CB00F443F1 /* LoginVC.swift */,
@@ -208,6 +211,7 @@
 				EAA118A9198AAC7100F443F1 /* SignupVC.swift in Sources */,
 				FB4E496D1CD5FB15001CE20B /* ConfirmationVC.swift in Sources */,
 				FB4E49731CD61621001CE20B /* LocationVC.swift in Sources */,
+				FB4E49751CD62660001CE20B /* DestinationVC.swift in Sources */,
 				FB4E49671CD58FC1001CE20B /* AttendanceVC.swift in Sources */,
 				FB4E496B1CD5AC44001CE20B /* CustomTableViewCell.swift in Sources */,
 				FB4E496F1CD5FB25001CE20B /* SuccessVC.swift in Sources */,
