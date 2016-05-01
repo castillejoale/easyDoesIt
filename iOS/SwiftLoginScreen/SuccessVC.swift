@@ -12,7 +12,7 @@ import Foundation
 class SuccessVC: UIViewController {
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,7 +28,6 @@ class SuccessVC: UIViewController {
         if let nav = UIApplication.sharedApplication().keyWindow?.rootViewController as? UINavigationController {
             nav.popToViewController(nav.viewControllers[0] as UIViewController, animated: false)
         }
-        
         
     }
     

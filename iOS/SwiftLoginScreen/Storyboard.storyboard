@@ -231,6 +231,8 @@
                     <navigationItem key="navigationItem" title="Destination" id="HKl-8A-ito"/>
                     <connections>
                         <outlet property="destinationTextView" destination="hFz-k1-udl" id="bOT-cF-6m8"/>
+                        <outlet property="destinationTextViewBottomConstraint" destination="uQC-6S-Pwq" id="1z8-R3-12j"/>
+                        <outlet property="nextButton" destination="zDb-Rp-2aT" id="S2F-KP-inY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8NW-FI-dQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,7 +271,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Address C" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-mo-YwY">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Address C" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-mo-YwY">
                                 <rect key="frame" x="16" y="398" width="288" height="100"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -295,6 +297,8 @@
                     <navigationItem key="navigationItem" title="Location" id="nEJ-PM-iVa"/>
                     <connections>
                         <outlet property="locationTextView" destination="Q7m-mo-YwY" id="VPG-ii-xnl"/>
+                        <outlet property="locationTextViewBottomConstraint" destination="omx-zG-WqY" id="gXv-Nl-1xd"/>
+                        <outlet property="nextButton" destination="PhX-RU-ehJ" id="KKV-n9-wIG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgX-4O-1fR" userLabel="First Responder" sceneMemberID="firstResponder"/>

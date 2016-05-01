@@ -24,6 +24,8 @@ class ConfirmationVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         
+        super.viewDidLoad()
+        
         print("Confirmation")
         print(service)
         print(services)
