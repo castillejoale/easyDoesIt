@@ -13,7 +13,7 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     @IBOutlet var tableView: UITableView!
     
-    var items: [String] = ["Get out of bed", "Bathroom", "Buy medicines", "Change position"]
+    var items: [String] = ["Get out of bed", "Go to bathroom", "Take a shower", "Buy medicines", "Change position"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,16 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if "attendanceSegue" == segue.identifier {
             let attendanceServices : NSMutableArray = []
+            
+            //BUG WHEN CALLING CELLFORROWATINDEXPATH when i is 5
+//            for i in 0...self.items.count-1 {
+//                let indexPath = NSIndexPath(forRow: i, inSection: 0)
+//                let cell:CustomTableViewCell = self.tableView.cellForRowAtIndexPath(indexPath)! as! CustomTableViewCell
+//                if (cell.ticked!) {
+//                    attendanceServices.addObject((cell.titleLabel?.text)!)
+//                    
+//                }
+//            }
             for i in 0...self.tableView.visibleCells.count - 1 {
                 let indexPath = NSIndexPath(forRow: i, inSection: 0)
                 let cell:CustomTableViewCell = self.tableView.cellForRowAtIndexPath(indexPath)! as! CustomTableViewCell
@@ -60,10 +70,10 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         
         if (cell.ticked!){
 //            print("Selected")
-            cell.tickerImage.backgroundColor = UIColor.greenColor()
+            cell.tickerImage.image =  UIImage(named:"TickGreen.png")
         } else {
 //            print("Deselected")
-            cell.tickerImage.backgroundColor = UIColor.redColor()
+            cell.tickerImage.image =  nil
         }
         
         
@@ -76,11 +86,11 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         if (selectedCell.ticked!){
 //            print("Deselecting")
             selectedCell.ticked = false
-            selectedCell.tickerImage.backgroundColor = UIColor.redColor()
+            selectedCell.tickerImage.image =  nil
         } else {
 //            print("Selecting")
             selectedCell.ticked = true
-            selectedCell.tickerImage.backgroundColor = UIColor.greenColor()
+            selectedCell.tickerImage.image =  UIImage(named:"TickGreen.png")
         }
         
     
@@ -90,10 +100,10 @@ class AttendanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         let deSelectedCell:CustomTableViewCell = tableView.cellForRowAtIndexPath(indexPath)! as! CustomTableViewCell
         if (deSelectedCell.ticked!){
             print("Keep Selected")
-            deSelectedCell.tickerImage.backgroundColor = UIColor.greenColor()
+            deSelectedCell.tickerImage.image =  UIImage(named:"TickGreen.png")
         } else {
             print("Keep Deselected")
-            deSelectedCell.tickerImage.backgroundColor = UIColor.redColor()
+            deSelectedCell.tickerImage.image =  nil
         }
         
     }

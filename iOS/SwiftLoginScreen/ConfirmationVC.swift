@@ -8,12 +8,14 @@
 
 import UIKit
 import Foundation
+import Alamofire
 
 class ConfirmationVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
     @IBOutlet var destinationLocationTitleLabel: UILabel!
     @IBOutlet var destinationLocationLabel: UILabel!
+    @IBOutlet var confirmButton: UIButton!
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var inputLocationLabel: UILabel!
@@ -51,6 +53,50 @@ class ConfirmationVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+
+    @IBAction func confirmPressed(sender: AnyObject) {
+        
+//        let parameters = [
+//            "Type": String(self.service),
+//            "Location": String(self.currentLocation),
+//            "Motive": String(self.services),
+//            "DestinationLocation": String(self.destinationLocation),
+//            "Gender": "any",
+//            "Name":"Max Fitton",
+//            "Broken_item": "nothing"
+//        ]
+        
+//        let parameters = [
+//            "Type": "ha",
+//            "Location":"ha",
+//            "Motive": "ha",
+//            "DestinationLocation": "ha",
+//            "Gender": "ha",
+//            "Name":"Max Fitton",
+//            "Broken_item": "ha"
+//        ]
+//        
+//        
+//        let urlString = "http://10.142.34.124:5000/service_request"
+//        let fileUrl = NSURL(string: urlString)
+//
+//        
+//        Alamofire.request(.POST, fileUrl!, parameters: parameters, encoding: .JSON).responseJSON {response, JSON, result in
+//            
+//            print(response)
+//            print(JSON)
+//            print(result.description)
+//        
+//            switch result {
+//            case .Success(let data):
+//                print("success")
+//            case .Failure(_, let error):
+//                print("Request failed with error: \(error)")
+//            }
+//            
+//        }
+        
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("normalCell")! as UITableViewCell

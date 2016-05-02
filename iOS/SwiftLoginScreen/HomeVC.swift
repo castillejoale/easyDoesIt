@@ -27,6 +27,7 @@ class HomeVC: UIViewController {
         } else {
             self.usernameLabel.text = prefs.valueForKey("USERNAME") as? String
         }
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
