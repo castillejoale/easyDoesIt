@@ -222,10 +222,10 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hFz-k1-udl">
-                                <rect key="frame" x="16" y="388" width="288" height="100"/>
+                                <rect key="frame" x="16" y="428" width="288" height="60"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="jyn-hQ-Oex"/>
+                                    <constraint firstAttribute="height" constant="60" id="jyn-hQ-Oex"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -300,10 +300,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-mo-YwY">
-                                <rect key="frame" x="16" y="388" width="288" height="100"/>
+                                <rect key="frame" x="16" y="428" width="288" height="60"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="wdK-vJ-Fwc"/>
+                                    <constraint firstAttribute="height" constant="60" id="wdK-vJ-Fwc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -477,7 +477,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your request is being processed!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIj-hO-sE9">
-                                <rect key="frame" x="26" y="80" width="268" height="60"/>
+                                <rect key="frame" x="26" y="70" width="268" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="AER-LV-0Nv"/>
                                 </constraints>
@@ -500,7 +500,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An attendant will be arriving to help you soon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enO-bG-LI8">
-                                <rect key="frame" x="26" y="358" width="268" height="90"/>
+                                <rect key="frame" x="26" y="368" width="268" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="RgG-cP-uu6"/>
                                 </constraints>
@@ -524,11 +524,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="enO-bG-LI8" secondAttribute="trailing" constant="10" id="SUQ-8l-bif"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lIj-hO-sE9" secondAttribute="trailing" constant="10" id="cqj-7x-obS"/>
                             <constraint firstItem="uxw-AO-Ske" firstAttribute="centerX" secondItem="Q02-EM-yD0" secondAttribute="centerX" id="dcM-wj-Ivc"/>
-                            <constraint firstItem="nbC-0b-DJy" firstAttribute="top" secondItem="enO-bG-LI8" secondAttribute="bottom" constant="60" id="gey-pI-SbH"/>
+                            <constraint firstItem="nbC-0b-DJy" firstAttribute="top" secondItem="enO-bG-LI8" secondAttribute="bottom" constant="50" id="gey-pI-SbH"/>
                             <constraint firstItem="enO-bG-LI8" firstAttribute="leading" secondItem="Q02-EM-yD0" secondAttribute="leadingMargin" constant="10" id="nLD-cM-EYT"/>
                             <constraint firstItem="96r-eM-A4g" firstAttribute="top" secondItem="nbC-0b-DJy" secondAttribute="bottom" id="oFK-Dj-0eR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nbC-0b-DJy" secondAttribute="trailing" constant="-20" id="u6j-8T-9Yl"/>
-                            <constraint firstItem="lIj-hO-sE9" firstAttribute="top" secondItem="arb-R1-AWt" secondAttribute="bottom" constant="60" id="xEo-sg-y73"/>
+                            <constraint firstItem="lIj-hO-sE9" firstAttribute="top" secondItem="arb-R1-AWt" secondAttribute="bottom" constant="50" id="xEo-sg-y73"/>
                         </constraints>
                     </view>
                 </viewController>
